@@ -16,11 +16,12 @@ def cetakarr(arr, n, m):
 def segitiga1():
     print('''
 -----ARRAY SEGITIGA TYPE 1-----
-Hasil dari Type 1 adalah:
+Input
 - Array A Upper Triangular berorder N * N
 - Array B Lower Triangular berorder (N-1) * (N-1)
-- A dan B disimpan di Array C berorder 3 * 3
-    ''')
+Output
+- Array A dan Array B disimpan di Array C berorder N * N
+''')
 
     n = 0
     while n < 3 or n > 5:
@@ -56,7 +57,10 @@ Hasil dari Type 1 adalah:
     input("\nTekan Enter Untuk Melihat Hasil!\n")
     print("----------- H A S I L -----------")
 
-    print("\nJadi Array Segitiga Type 1 dari")
+    print('''
+Jadi Array Segitiga Type 1 dari Array A (Upper Triangular) berorder N * N
+dan Array B (Lower Triangular) berorder (N-1) * (N-1) adalah Array C berorder N * N
+''')
     print(f"Array A (Upper Triangular) dengan order {n} * {n}:")
     cetakarr(a, n, n)
 
@@ -70,11 +74,12 @@ Hasil dari Type 1 adalah:
 def segitiga2():
     print('''
 -----ARRAY SEGITIGA TYPE 2-----
-Hasil dari Type 2 adalah:
+Input
 - Array A Upper Triangular berorder N * N
 - Array B Lower Triangular berorder N * N
-- A dan B disimpan di Array C berorder N * (N+1)
-    ''')
+Output
+- Array A dan Array B disimpan di Array C berorder N * (N+1)
+''')
 
     n = 0
     while n < 3 or n > 5:
@@ -110,7 +115,10 @@ Hasil dari Type 2 adalah:
     input("\nTekan Enter Untuk Melihat Hasil!\n")
     print("----------- H A S I L -----------")
 
-    print("\nJadi Array Segitiga Type 2 dari")
+    print('''
+Jadi Array Segitiga Type 2 dari Array A (Upper Triangular) berorder N * N
+dan Array B (Lower Triangular) berorder N * N adalah Array C berorder N * (N+1)
+''')
     print(f"Array A (Upper Triangular) dengan order {n} * {n}:")
     cetakarr(a, n, n)
 
@@ -124,12 +132,13 @@ Hasil dari Type 2 adalah:
 def segitiga3():
     print('''
 -----ARRAY SEGITIGA TYPE 3-----
-Hasil dari Type 3 adalah:
+Input
 - Array A Upper Triangular berorder N * N
 - Array B Upper Triangular berorder N * N
 - Transpose Array B menjadi Lower Triangular berorder N * N
-- A dan B disimpan di Array C berorder N * (N+1)
-    ''')
+Output
+- Array A dan Array B disimpan di Array C berorder N * (N+1)
+''')
 
     n = 0
     while n < 3 or n > 5:
@@ -174,7 +183,11 @@ Hasil dari Type 3 adalah:
     input("\nTekan Enter Untuk Melihat Hasil!\n")
     print("----------- H A S I L -----------")
 
-    print("\nJadi Array Segitiga Type 3 dari")
+    print('''
+Jadi Array Segitiga Type 3 dari Array A (Upper Triangular) berorder N * N
+dan Array B (Upper Triangular) berorder N * N, kemudian Array B di Transpose menjadi
+Lower Triangular. Hasilnya adalah Array C berorder N * (N+1)
+''')
     print(f"array A (Upper Triangular) dengan order {n} * {n}:")
     cetakarr(a, n, n)
 
@@ -188,12 +201,13 @@ Hasil dari Type 3 adalah:
 def segitiga4():
     print('''
 -----ARRAY SEGITIGA TYPE 4-----
-Hasil dari Type 4 adalah:
+Input
 - Array A Upper Triangular berorder N * N
 - Array B Upper Triangular berorder N * N
 - Transpose Array A menjadi Lower Triangular berorder N * N
-- A dan B disimpan di Array C berorder N * (N+1)
-    ''')
+Output
+- Array A dan Array B disimpan di Array C berorder N * (N+1)
+''')
 
     n = 0
     while n < 3 or n > 5:
@@ -238,7 +252,11 @@ Hasil dari Type 4 adalah:
     input("\nTekan Enter Untuk Melihat Hasil!\n")
     print("----------- H A S I L -----------")
 
-    print("\nJadi array segitiga tipe 4 dari")
+    print('''
+Jadi Array Segitiga Type 4 dari Array A (Upper Triangular) berorder N * N
+dan Array B (Upper Triangular) berorder N * N, kemudian Array A di Transpose menjadi
+Lower Triangular. Hasilnya adalah Array C berorder N * (N+1)
+''')
     print(f"Transpose array A (Upper Triangular) dengan order {n} * {n}:")
     cetakarr(a, n, n)
 
