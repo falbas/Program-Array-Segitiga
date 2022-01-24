@@ -24,16 +24,16 @@ Output
 ''')
 
     n = 0
-    while n < 3 or n > 5:
+    while True:
         n = int(input(f'Masukkan ukuran array (3-5): '))
         if n >= 3 and n <= 5:
             break
         print("Ukuran array harus antara 3-5")
+    print()
 
     a = [['0' for i in range(n)] for i in range(n)]
-    b = [['0' for i in range(n - 1)] for i in range(n - 1)]
+    b = [['0' for i in range(n-1)] for i in range(n-1)]
     c = [['0' for i in range(n)] for i in range(n)]
-    print()
 
     for i in range(n):
         for j in range(n):
@@ -45,14 +45,14 @@ Output
     cetakarr(a, n, n)
     print()
 
-    for i in range(n - 1):
-        for j in range(n - 1):
+    for i in range(n-1):
+        for j in range(n-1):
             if j <= i:
                 b[i][j] = input((f'- Masukkan Elemen B[{i+1},{j+1}]: '))
-                c[i + 1][j] = b[i][j]
+                c[i+1][j] = b[i][j]
 
     print(f"\nArray B (Lower Triangular) dengan order {n-1} * {n-1}:")
-    cetakarr(b, n - 1, n - 1)
+    cetakarr(b, n-1, n-1)
 
     input("\nTekan Enter Untuk Melihat Hasil!\n")
     print("----------- H A S I L -----------")
@@ -82,22 +82,22 @@ Output
 ''')
 
     n = 0
-    while n < 3 or n > 5:
+    while True:
         n = int(input(f'Masukkan ukuran array (3-5): '))
         if n >= 3 and n <= 5:
             break
         print("Ukuran array harus antara 3-5")
+    print()
 
     a = [['0' for i in range(n)] for i in range(n)]
     b = [['0' for i in range(n)] for i in range(n)]
-    c = [['0' for i in range(n + 1)] for i in range(n)]
-    print()
+    c = [['0' for i in range(n+1)] for i in range(n)]
 
     for i in range(n):
         for j in range(n):
             if j >= i:
                 a[i][j] = input(f'- Masukkan Elemen A[{i+1},{j+1}]: ')
-                c[i][j + 1] = a[i][j]
+                c[i][j+1] = a[i][j]
 
     print(f"\nArray A (Upper Triangular) dengan order {n} * {n}:")
     cetakarr(a, n, n)
@@ -126,7 +126,7 @@ dan Array B (Lower Triangular) berorder N * N adalah Array C berorder N * (N+1)
     cetakarr(b, n, n)
 
     print(f"\nHasil akhirnya adalah Array C dengan order {n} * {n+1}:")
-    cetakarr(c, n, n + 1)
+    cetakarr(c, n, n+1)
 
 
 def segitiga3():
@@ -141,22 +141,22 @@ Output
 ''')
 
     n = 0
-    while n < 3 or n > 5:
+    while True:
         n = int(input(f'Masukkan ukuran array (3-5): '))
         if n >= 3 and n <= 5:
             break
         print("Ukuran array harus antara 3-5")
+    print()
 
     a = [['0' for i in range(n)] for i in range(n)]
     b = [['0' for i in range(n)] for i in range(n)]
-    c = [['0' for i in range(n + 1)] for i in range(n)]
-    print()
+    c = [['0' for i in range(n+1)] for i in range(n)]
 
     for i in range(n):
         for j in range(n):
             if j >= i:
                 a[i][j] = input(f'- Masukkan Elemen A[{i+1},{j+1}]: ')
-                c[i][j + 1] = a[i][j]
+                c[i][j+1] = a[i][j]
 
     print(f"\nArray A (Upper Triangular) dengan order {n} * {n}:")
     cetakarr(a, n, n)
@@ -195,7 +195,7 @@ Lower Triangular. Hasilnya adalah Array C berorder N * (N+1)
     cetakarr(b, n, n)
 
     print(f"\nHasil akhirnya adalah Array C dengan order {n} * {n+1}:")
-    cetakarr(c, n, n + 1)
+    cetakarr(c, n, n+1)
 
 
 def segitiga4():
@@ -210,16 +210,16 @@ Output
 ''')
 
     n = 0
-    while n < 3 or n > 5:
+    while True:
         n = int(input(f'Masukkan ukuran array (3-5): '))
         if n >= 3 and n <= 5:
             break
         print("Ukuran array harus antara 3-5")
+    print()
 
     a = [['0' for i in range(n)] for i in range(n)]
     b = [['0' for i in range(n)] for i in range(n)]
-    c = [['0' for i in range(n + 1)] for i in range(n)]
-    print()
+    c = [['0' for i in range(n+1)] for i in range(n)]
 
     for i in range(n):
         for j in range(n):
@@ -244,7 +244,7 @@ Output
         for j in range(n):
             if j >= i:
                 b[i][j] = input(f'- Masukkan Elemen B[{i+1},{j+1}]: ')
-                c[i][j + 1] = b[i][j]
+                c[i][j+1] = b[i][j]
 
     print(f"\nArray B (Upper Triangular) dengan order {n} * {n}:")
     cetakarr(b, n, n)
@@ -264,7 +264,7 @@ Lower Triangular. Hasilnya adalah Array C berorder N * (N+1)
     cetakarr(b, n, n)
 
     print(f"\nHasil akhirnya adalah array C dengan order {n} * {n+1}:")
-    cetakarr(c, n, n + 1)
+    cetakarr(c, n, n+1)
 
 
 def menu():
